@@ -1,34 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  overflow: auto;
 }
 
-ul {
-  padding-left: 24px;
+.wrapper__home {
+  padding: 40px;
 }
 
-li {
-  margin-bottom: 8px;
+.wrapper__home h2 {
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+
+  color: #333333;
 }
 
-.welcome {
-  max-width: 800px;
-  margin: 0 auto;
+h1 {
+  width: auto;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+
+  color: #333333;
 }
 
-.welcome-text {
-  margin-top: 30vh;
-  font-weight: 500;
+.text_content {
+  font-size: 24px;
+  max-width: 350px;
+  padding: 40px 0 40px;
+
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+
+  color: #4f4f4f;
 }
 
-.welcome-text p {
-  font-size: 1rem;
-  font-weight: 400;
+.container {
+  display: flex;
+  flex-direction: center;
+  padding: 40px;
+  justify-items: center;
+  width: 100%;
+
+  max-width: 1200px;
 }
 
-.welcome-text h1 {
-  font-size: 1.5rem;
+section {
+  display: grid;
+  justify-items: center;
 }
 
-.welcome-text a {
-  color: #f7542e;
+.container img {
+  width: 50%;
+  margin-right: 80px;
+}
+
+.button__wrapper {
+  width: 216px;
+  height: 68px;
+  left: 740px;
+  top: 663px;
+  color: white;
+
+  width: 216px;
+  height: 68px;
+  left: 740px;
+  top: 663px;
+
+  /* Gray 1 */
+
+  background: #333333;
+
+  background: #333333;
+}
+
+.footer {
+  padding: 20px 0;
+  bottom: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+  color: #333333;
+}
+
+.footer,
+a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    display: block;
+  }
+
+  .container__img {
+
+    left: 11.73%;
+    right: 11.78%;
+    top: 11.49%;
+    bottom: 63.44%;
+  }
 }
